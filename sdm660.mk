@@ -159,6 +159,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk-sp
+
 # Wi-Fi
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/wifi/hostapd.accept:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd.accept \
