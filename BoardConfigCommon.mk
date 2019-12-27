@@ -153,7 +153,7 @@ BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom \
     msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 \
     service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 \
-    firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
+    firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -177,7 +177,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+#BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -188,6 +188,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
+
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -210,23 +212,13 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
-# SELinux
-PRIVATE_EXCLUDE_BUILD_TEST := true
-
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-06-05
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
-    device/lineage/sepolicy/qcom/system
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
