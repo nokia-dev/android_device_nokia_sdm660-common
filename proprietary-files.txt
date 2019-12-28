@@ -215,6 +215,23 @@ lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libOmxMux.so
 
+# Sensors
+vendor/bin/sensors.qti
+vendor/etc/sap.conf
+vendor/etc/sensors/hals.conf
+vendor/lib/libqmi_common_so.so
+vendor/lib/libsdsprpc.so
+vendor/lib/libsensor1.so
+vendor/lib/libsensor_reg.so
+vendor/lib/sensor_calibrate.so
+vendor/lib/sensors.ssc.so
+vendor/lib64/libqmi_common_so.so
+vendor/lib64/libsdsprpc.so
+vendor/lib64/libsensor1.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/sensor_calibrate.so
+vendor/lib64/sensors.ssc.so
+
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
