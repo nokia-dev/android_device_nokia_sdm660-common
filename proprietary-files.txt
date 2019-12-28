@@ -273,6 +273,13 @@ framework/qti-telephony-common.jar
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
+# Thermal
+vendor/bin/thermal-engine
+vendor/etc/thermal-engine.conf
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
+
 # Wi-Fi Display
 bin/wfdservice
 etc/init/wfdservice.rc
