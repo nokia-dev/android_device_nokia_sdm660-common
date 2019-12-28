@@ -252,6 +252,9 @@ vendor/etc/thermal-engine.conf
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
+# Wifi
+vendor/bin/cnss-daemon
+
 # Wi-Fi Display
 bin/wfdservice
 etc/init/wfdservice.rc
