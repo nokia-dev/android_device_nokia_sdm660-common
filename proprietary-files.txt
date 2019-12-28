@@ -215,6 +215,51 @@ lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libOmxMux.so
 
+# Sensors
+vendor/etc/8716.ini
+vendor/etc/8716_B2N.ini
+vendor/etc/8716_PL2.ini
+vendor/etc/8716_S2.ini
+vendor/etc/8716_S3.ini
+vendor/etc/8719.ini
+vendor/etc/test_sensor_0.ini
+vendor/etc/ctl/test_sensor_0.ini
+vendor/etc/ctl/test_sensor_1.ini
+vendor/etc/drg/test_sensor_1.ini
+vendor/etc/drg/test_sensor_2.ini
+vendor/etc/drp/test_sensor_2.ini
+vendor/etc/scve/facereco/gModel.dat
+vendor/bin/sensors.qti
+vendor/lib/hw/activity_recognition.sdm660.so
+vendor/etc/sap.conf
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sensor_def_qcomdev.conf
+vendor/etc/sensors/sensor_def_qcomdev_b2.conf
+vendor/etc/sensors/sensor_def_qcomdev_c1.conf
+vendor/etc/sensors/sensor_def_qcomdev_drg.conf
+vendor/etc/sensors/sensor_def_qcomdev_hg1.conf
+vendor/etc/sensors/sensor_def_qcomdev_hh1.conf
+vendor/etc/sensors/sensor_def_qcomdev_pl2.conf
+vendor/etc/sensors/sensor_def_qcomdev_s2.conf
+vendor/etc/sensors/sensor_def_qcomdev_tas.conf
+vendor/lib/libsdsprpc.so
+vendor/lib/libsensor1.so
+vendor/lib/libsensor_reg.so
+vendor/lib/sensor_calibrate.so
+vendor/lib/sensors.ssc.so
+vendor/lib64/hw/activity_recognition.sdm660.so
+vendor/lib64/libsdsprpc.so
+vendor/lib64/libsensor1.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/sensor_calibrate.so
+vendor/lib64/sensors.ssc.so
+
+# Sensors (Hidl)
+vendor/bin/hw/android.hardware.sensors@1.0-service
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
+vendor/lib/hw/android.hardware.sensors@1.0-impl.so
+vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
+
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
