@@ -163,6 +163,14 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
+# GPS
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
+    $(COMMON_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(COMMON_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    $(COMMON_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(COMMON_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
