@@ -34,6 +34,12 @@ lib64/libsdm-disp-apis.so
 lib64/libsd_sdk_display.so|6ce8dc56e0c1b2966a282ee7b66058df34b6a009
 lib64/vendor.display.color@1.0.so
 
+# Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+
 # IMS
 -priv-app/ims/ims.apk
 lib64/libdiag_system.so
@@ -45,6 +51,42 @@ lib64/lib-imsvt.so
 lib64/lib-imsvtutils.so
 lib64/librcc.so
 lib64/vendor.qti.imsrtpservice@1.0.so
+
+# Keymaster (QTI)
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+
+# Keymaster
+vendor/lib/libkeymasterutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterdeviceutils.so
+
+# Keymaster (firmware)
+vendor/firmware/cmnlib.b00
+vendor/firmware/cmnlib.b01
+vendor/firmware/cmnlib.b02
+vendor/firmware/cmnlib.b03
+vendor/firmware/cmnlib.b04
+vendor/firmware/cmnlib.b05
+vendor/firmware/cmnlib.b06
+vendor/firmware/cmnlib.mdt
+vendor/firmware/cmnlib64.b00
+vendor/firmware/cmnlib64.b01
+vendor/firmware/cmnlib64.b02
+vendor/firmware/cmnlib64.b03
+vendor/firmware/cmnlib64.b04
+vendor/firmware/cmnlib64.b05
+vendor/firmware/cmnlib64.b06
+vendor/firmware/cmnlib64.mdt
+
+# Keystore
+vendor/lib/hw/keystore.sdm660.so
+vendor/lib64/hw/keystore.sdm660.so
 
 # Media
 lib64/libmmosal.so
