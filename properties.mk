@@ -153,9 +153,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true
 
 # Media
-#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-#     media.settings.xml=/system/etc/media_profiles_vendor.xml
-
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-player=true \
     media.stagefright.enable-http=true \
@@ -264,5 +261,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wbg.bt.service=false \
     persist.sys.wbg.bt=btstop \
     persist.timed.enable=true \
-    persist.vendor.overlay.izat.optin=rro \
     vendor.video.disable.ubwc=1
