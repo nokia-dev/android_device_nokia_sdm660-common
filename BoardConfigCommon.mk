@@ -103,6 +103,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# CNE and DPM
+BOARD_USES_QCNE := true
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -136,6 +139,10 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 
+# FM
+BOARD_HAS_QCA_FM_SOC := "cherokee"
+BOARD_HAVE_QCOM_FM := true
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
@@ -158,6 +165,16 @@ TARGET_KERNEL_CLANG_VERSION := r353983c
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
+
+# Peripheral manager
+TARGET_PER_MGR_ENABLED := true
+
+# Platform
+TARGET_BOARD_PLATFORM := sdm660
+BOARD_USES_QCOM_HARDWARE := true
+
+# Power
+TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
@@ -185,11 +202,19 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware
 
+# RIL
+TARGET_RIL_VARIANT := caf
+PROTOBUF_SUPPORTED := true
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
 PRIVATE_EXCLUDE_BUILD_TEST := true
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2018-06-05
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
@@ -202,6 +227,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
     device/qcom/sepolicy/qva/public
+
+# Timeservice
+BOARD_USES_QC_TIME_SERVICES := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
+# CNE
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
@@ -180,6 +184,12 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
@@ -188,10 +198,29 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     $(COMMON_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
 
+# Healthd
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
+
+# IPA Manager
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
+# IPC router config
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
+# IPv6
+PRODUCT_PACKAGES += \
+    ethertypes \
+    libebtc
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -222,11 +251,15 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0 \
+    libandroid_net \
     netutils-wrapper-1.0
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.1-service \
     NfcNci \
+    SecureElement \
     Tag \
     com.android.nfc_extras
 
@@ -242,6 +275,18 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.1-service-qti
+
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
+
+# QNS
+PRODUCT_PACKAGES += \
+    libstdc++.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -266,6 +311,10 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -281,6 +330,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -301,9 +354,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk-sp
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
