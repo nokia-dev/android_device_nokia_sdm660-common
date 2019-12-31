@@ -3,6 +3,10 @@ lib64/com.qualcomm.qti.ant@1.0.so
 -lib64/libantradio.so
 lib/com.qualcomm.qti.ant@1.0.so
 -lib/libantradio.so
+vendor/lib/com.qualcomm.qti.ant@1.0.so
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1253,3 +1257,13 @@ lib/libwfduibcsrcinterface.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
 -priv-app/WfdService/WfdService.apk
+vendor/bin/wifidisplayhalservice
+vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+vendor/lib/libwfdcommonutils_proprietary.so
+vendor/lib/libwfdhaldsmanager.so
+vendor/lib/libwfdhdcpcp.so
+vendor/lib/libwfdmmservice.so
+vendor/lib/libwfdmodulehdcpsession.so
+vendor/lib64/libwfdhdcpcp.so
