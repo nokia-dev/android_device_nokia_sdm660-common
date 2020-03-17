@@ -162,7 +162,7 @@ vendor/etc/camera/s5k4h8_pl2_holitech_chromatix.xml
 vendor/etc/camera/s5k4h8_s2p_chromatix.xml
 vendor/etc/camera/calibration_test.bin
 vendor/etc/camera/s5k3h7_s2p_chromatix.xml
-vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/camera.sdm660.so|426335926142bc2e4be0ddc07ce26090b5c71906
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_beautyshot_image_algorithm.so
 vendor/lib/libarcsoft_beautyshot_video_algorithm.so
