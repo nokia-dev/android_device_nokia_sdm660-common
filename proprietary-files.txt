@@ -131,6 +131,30 @@ vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/bin/hvdcp_opti
 
 # Camera
+vendor/etc/PL2/ncf/front/ISO640_1280x720.ncf
+vendor/etc/PL2/ncf/front/ISO640_2048x1536.ncf
+vendor/etc/PL2/ncf/front/ISO640_2592x1944.ncf
+vendor/etc/PL2/ncf/front/ISO640_2688x1512.ncf
+vendor/etc/PL2/ncf/front/ISO640_3264x2448.ncf
+vendor/etc/PL2/ncf/front/ISO640_864x480.ncf
+vendor/etc/PL2/ncf/front/ISO800_1280x720.ncf
+vendor/etc/PL2/ncf/front/ISO800_2048x1536.ncf
+vendor/etc/PL2/ncf/front/ISO800_2592x1944.ncf
+vendor/etc/PL2/ncf/front/ISO800_2688x1512.ncf
+vendor/etc/PL2/ncf/front/ISO800_3264x2448.ncf
+vendor/etc/PL2/ncf/front/ISO800_864x480.ncf
+vendor/etc/PL2/ncf/rear/ISO640_1280x720.ncf
+vendor/etc/PL2/ncf/rear/ISO640_2048x1536.ncf
+vendor/etc/PL2/ncf/rear/ISO640_2688x1512.ncf
+vendor/etc/PL2/ncf/rear/ISO640_3200x2400.ncf
+vendor/etc/PL2/ncf/rear/ISO640_3840x2160.ncf
+vendor/etc/PL2/ncf/rear/ISO640_4608x3456.ncf
+vendor/etc/PL2/ncf/rear/ISO800_1280x720.ncf
+vendor/etc/PL2/ncf/rear/ISO800_2048x1536.ncf
+vendor/etc/PL2/ncf/rear/ISO800_2688x1512.ncf
+vendor/etc/PL2/ncf/rear/ISO800_3200x2400.ncf
+vendor/etc/PL2/ncf/rear/ISO800_3840x2160.ncf
+vendor/etc/PL2/ncf/rear/ISO800_4608x3456.ncf
 vendor/etc/camera/s5k3p8sp_b2n_chromatix.xml
 vendor/etc/camera/s5k2l8_ctl_main_chromatix.xml
 vendor/etc/camera/s5k3m3sm_s3p_chromatix.xml
@@ -163,6 +187,35 @@ vendor/etc/camera/s5k4h8_s2p_chromatix.xml
 vendor/etc/camera/calibration_test.bin
 vendor/etc/camera/s5k3h7_s2p_chromatix.xml
 vendor/lib/hw/camera.sdm660.so|426335926142bc2e4be0ddc07ce26090b5c71906
+vendor/lib/libactuator_ad5816g.so
+vendor/lib/libactuator_ad5823.so
+vendor/lib/libactuator_ak7345.so
+vendor/lib/libactuator_ak7371.so
+vendor/lib/libactuator_ak7371_s2p.so
+vendor/lib/libactuator_ak7371_s3p.so
+vendor/lib/libactuator_ak7371_s3p_aux.so
+vendor/lib/libactuator_ak7371_tele_b2n.so
+vendor/lib/libactuator_ak7371_wide_b2n.so
+vendor/lib/libactuator_bu64244gwz.so
+vendor/lib/libactuator_bu64297.so
+vendor/lib/libactuator_bu64297_c1n.so
+vendor/lib/libactuator_dw9714.so
+vendor/lib/libactuator_dw9716.so
+vendor/lib/libactuator_dw9761b.so
+vendor/lib/libactuator_dw9763.so
+vendor/lib/libactuator_dw9763b.so
+vendor/lib/libactuator_dw9790a.so
+vendor/lib/libactuator_dw9800.so
+vendor/lib/libactuator_dw9800_tas.so
+vendor/lib/libactuator_fp5510_drg_main.so
+vendor/lib/libactuator_gt9764_tas.so
+vendor/lib/libactuator_lc898122.so
+vendor/lib/libactuator_lc898212xd.so
+vendor/lib/libactuator_lc898212xd_qc2002.so
+vendor/lib/libactuator_lc898217xc.so
+vendor/lib/libactuator_lc898219_ctl_main.so
+vendor/lib/libactuator_pseudo.so
+vendor/lib/libactuator_rohm_bu64243gwz.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_beautyshot_image_algorithm.so
 vendor/lib/libarcsoft_beautyshot_video_algorithm.so
@@ -182,6 +235,13 @@ vendor/lib/libmegface-new.so
 vendor/lib/libMegviiFacepp.so
 vendor/lib/libMGBeauty.so
 vendor/lib/libimage_matting.so
+vendor/lib/libmmcamera_ov16885.so
+vendor/lib/libmmcamera_ov16885_eeprom.so
+vendor/lib/libmmcamera_hi846.so
+vendor/lib/libmmcamera_hi846_eeprom.so
+vendor/lib/libdepthmapwrapper.so
+vendor/lib/libflash_pmic.so
+vendor/lib/libflash_dummy_flash.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -572,6 +632,7 @@ vendor/lib/libsecureui.so
 vendor/lib/libsecureui_svcsock.so
 vendor/lib/libsi.so
 vendor/lib/libssd.so
+vendor/lib/libspl.so|0e7e01c9813fe4ebd1f5f40c82aeba1eb2f68b09
 vendor/lib/libStDrvInt.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
@@ -593,6 +654,7 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsi.so
 vendor/lib64/libssd.so
+vendor/lib64/libspl.so|5443114db96c1a534e6a338dec895af26dd9d863
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
@@ -1188,10 +1250,32 @@ vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 
 # Sensors
+vendor/etc/8716.ini
+vendor/etc/8716_B2N.ini
+vendor/etc/8716_PL2.ini
+vendor/etc/8716_S2.ini
+vendor/etc/8716_S3.ini
+vendor/etc/8719.ini
+vendor/etc/test_sensor_0.ini
+vendor/etc/ctl/test_sensor_0.ini
+vendor/etc/ctl/test_sensor_1.ini
+vendor/etc/drg/test_sensor_1.ini
+vendor/etc/drg/test_sensor_2.ini
+vendor/etc/drp/test_sensor_2.ini
+vendor/etc/scve/facereco/gModel.dat
 vendor/bin/sensors.qti
 vendor/lib/hw/activity_recognition.sdm660.so
 vendor/etc/sap.conf
 vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sensor_def_qcomdev.conf
+vendor/etc/sensors/sensor_def_qcomdev_b2.conf
+vendor/etc/sensors/sensor_def_qcomdev_c1.conf
+vendor/etc/sensors/sensor_def_qcomdev_drg.conf
+vendor/etc/sensors/sensor_def_qcomdev_hg1.conf
+vendor/etc/sensors/sensor_def_qcomdev_hh1.conf
+vendor/etc/sensors/sensor_def_qcomdev_pl2.conf
+vendor/etc/sensors/sensor_def_qcomdev_s2.conf
+vendor/etc/sensors/sensor_def_qcomdev_tas.conf
 vendor/lib/libsdsprpc.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
@@ -1203,6 +1287,12 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
+
+# Sensors (Hidl)
+vendor/bin/hw/android.hardware.sensors@1.0-service
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
+vendor/lib/hw/android.hardware.sensors@1.0-impl.so
+vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
@@ -1221,6 +1311,13 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-C1N.conf
+vendor/etc/thermal-engine-HH1.conf
+vendor/etc/thermal-engine-HH6.conf
+vendor/etc/thermal-engine-PL2.conf
+vendor/etc/thermal-engine-SAT.conf
+vendor/etc/thermal-engine-SD1.conf
+vendor/etc/thermal-engine-SS2.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
