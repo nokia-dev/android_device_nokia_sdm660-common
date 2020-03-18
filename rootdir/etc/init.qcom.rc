@@ -62,6 +62,10 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    #for sensor config read
+    chown system system /proc/dt_info
+    chmod 0664 /proc/dt_info
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
     # set RLIMIT_MEMLOCK to 64MB
